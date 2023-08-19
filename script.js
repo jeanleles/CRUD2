@@ -19,21 +19,6 @@ const products = [
   }
 ]
 
-const customers = [
-  {
-    id: 2000,
-    name: 'Jean Leles',
-    balance: 1900,
-    products: []
-  },
-  {
-    id: 2001,
-    name: 'Maria Silva',
-    balance: 1200,
-    products: []
-  },
-]
-
 //CREATE
 function createProduct(name, value, stock) {
   const id = products[products.length-1].id + 1
