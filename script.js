@@ -56,6 +56,15 @@ function updateProduct(id, name, value, stock) {
   products[index].name = name
   products[index].value = value
   products[index].stock = stock
+  console.log('Produto atualizado.')
 }
 updateProduct(1002, 'Fones de Ouvido', 25, 19)
+readProducts()
+
+//DELETE
+function deleteProduct(id) {
+  const index = products.findIndex(item => item.id == id)
+  products.splice(index, 1)
+}
+deleteProduct(1000)
 readProducts()
